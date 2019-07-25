@@ -1,4 +1,4 @@
-# Running Gitea SCM and Drone CI via docker-compose
+# Running Gitea SCM, Drone CI and Portainer Monitoring via docker-compose
 
 Create your local Gitea (source code repository, similar to GitHub), and a Drone.io instance via docker-compose.
 The Portainer Management UI is also included in the compose file. 
@@ -6,6 +6,7 @@ The Portainer Management UI is also included in the compose file.
 ## Step-by-Step
 1. Install docker and docker-compose [Quickinstaller](https://raw.githubusercontent.com/srcmkr/docker-dotnet-testproj/master/dockerinstall.sh) (wget + chmod u+x)
 1. `wget https://raw.githubusercontent.com/srcmkr/gitea-drone-docker-compose/master/docker-compose.yaml`
+1. `docker network create gitea-network`
 1. `docker-compose up -d`
 
 # Gitea
